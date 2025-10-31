@@ -1,6 +1,56 @@
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'BIZ UDP明朝 Medium', Courier, monospace;
     font-size: 25px;
     color: #18181d;
     background-color: #fafaff;
+}
+
+header {
+    background-color: #15183c;
+    color: #fafaff; /* 文字色を白に */
+    padding: 10px 10px; /* 内側の余白 (上下10px、左右20px) */
+    display: flex; /* 子要素（h1とnav）を柔軟に配置できるようにする */
+    justify-content: space-between; /* 子要素を両端に寄せて配置 */
+    align-items: center; /* 子要素を垂直方向の中央に揃える */
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.main{
+    text-align: center;
+}
+.profile_text {
+    text-align: center;
+}
+.Works_text {
+    text-align: center;
+}
+
+.white-link{
+    color: #fafaff;
+}
+
+.black-link{
+    color: #15183c;
+    text-decoration: none;
+}
+
+.works_small{
+    width: 300px;
+    height: 300px;
+}
+
+.works_small, .works_large{
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.works_img{
+    width: 250px;
+    border-radius: 5px;
 }
