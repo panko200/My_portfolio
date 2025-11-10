@@ -51,6 +51,23 @@ h1 {
 }
 
 .works_img{
-    width: 250px;
+    width: 100%; /* 親要素(works_small)の幅いっぱいに広げる */
+    height: auto;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 各セクションのタイトルとコンテンツに上下の余白を追加 */
+section {
+    padding: 50px 0;
+    text-align: center; /* セクション全体を中央寄せ */
+}
+
+/* Worksセクション内の作品を横並びにするための設定（重要） */
+.flex_container {
+    display: flex;
+    flex-wrap: wrap; /* 画面幅が狭くなったら折り返す */
+    justify-content: center; /* 作品を中央寄せ */
+    gap: 30px; /* 作品間の隙間 */
+    margin-top: 30px; /* タイトルとの間隔 */
 }
