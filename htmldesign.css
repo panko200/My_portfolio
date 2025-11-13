@@ -39,8 +39,13 @@ h1 {
 
 .works_small{
     width: 300px;
-    height: 300px;
 }
+
+.works_large{
+    width: 900px; /* 300px * 2 + 30px (gap) のイメージ */
+}
+
+
 
 .works_small, .works_large{
     border-radius: 5px;
@@ -57,6 +62,12 @@ h1 {
     margin-bottom: 10px;
 }
 
+.works_large .works_img{
+    width: 30%; /* works_largeの幅（630px）の30%に設定 */
+    margin: 5px; /* 画像間の微調整のための余白 */
+    object-fit: contain; /* 画像全体が表示されるように調整（必要に応じて） */
+}
+
 /* 各セクションのタイトルとコンテンツに上下の余白を追加 */
 section {
     padding: 50px 0;
@@ -70,4 +81,47 @@ section {
     justify-content: center; /* 作品を中央寄せ */
     gap: 30px; /* 作品間の隙間 */
     margin-top: 30px; /* タイトルとの間隔 */
+}
+
+.works_large_explain{ /* セレクタを p .works_large_explain から変更 */
+    width: 100%; /* works_largeの幅全体を使う */
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px; /* 説明文のフォントサイズを小さめに調整 */
+}
+
+.skill_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1200px; /* 最大幅を設定 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill_item {
+    width: 300px; /* works_smallと似た幅に設定 */
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: left; /* スキルの内容を左寄せ */
+}
+
+.skill_item h3 {
+    text-align: center;
+    border-bottom: 2px solid #15183c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.skill_item ul {
+    list-style: none; /* リストの黒点を削除 */
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 20px; /* スキル説明のフォントサイズを小さめに調整 */
 }
